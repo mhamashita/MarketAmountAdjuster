@@ -94,7 +94,15 @@ public class ExchangeCommandListener implements Listener {
             var slot = i;
         }
         //スロット番号の昇順にmin(cost,アイテム数)分の減らしていくべきアイテムの数をメモする
+        HashMap<Material,TreeMap<Integer,Integer>> delete_map;
+        for(var ent: cost.entrySet()){
+            var item = ent.getKey();
+            var cost_amount = ent.getValue();
 
+            while(cost_amount>0){
+
+            }
+        }
         //実際にアイテムを減らす処理を行う
     }
 }
